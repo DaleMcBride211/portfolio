@@ -36,10 +36,28 @@ export default function Home() {
         {/* Hero Section */}
         <section className="flex flex-col md:flex-row items-center gap-8 md:gap-16">
           <div className="md:w-1/2">
-            <h2 className="text-3xl font-bold text-gray-800 mb-4">Hi, I'm Dale McBride</h2>
+            <h2 className="text-3xl font-bold text-gray-800 mb-4">Hi, I am Dale McBride</h2>
             <p className="text-lg text-gray-600 mb-6">
               A passionate full-stack web developer with a strong foundation in both front-end and back-end technologies. I love building scalable and user-friendly web applications.
             </p>
+            <div className="grid gap-2 text-sm">
+              <div className="flex items-center gap-2">
+                <Label className="font-semibold">Name:</Label>
+                <span>Dale McBride</span>
+              </div>
+              <div className="flex items-center gap-2">
+                <Label className="font-semibold">Email:</Label>
+                <a href="mailto:john.doe@example.com" className="text-blue-600 hover:underline">
+                  dalemcbride129@gmail.com
+                </a>
+              </div>
+              <div className="flex items-center gap-2 mb-2">
+                <Label className="font-semibold">Phone:</Label>
+                <a href="tel:+11234567890" className="text-blue-600 hover:underline">
+                  (307) 314-5132
+                </a>
+              </div>
+            </div>
             <Button asChild>
               <Link href="#projects">View My Projects</Link>
             </Button>
@@ -101,6 +119,7 @@ export default function Home() {
                 <Badge variant="secondary">React</Badge>
                 <Badge variant="secondary">Next.js</Badge>
                 <Badge variant="secondary">Shadcn/ui</Badge> 
+                <Badge variant="secondary">Typescript</Badge>
                 {/* Add more front-end skills as Badges */}
               </div>
             </div>
@@ -117,7 +136,8 @@ export default function Home() {
               <h3 className="font-semibold text-gray-700">Databases</h3>
               <div className="flex flex-wrap gap-1">
                 <Badge variant="secondary">MongoDB</Badge>
-                
+                <Badge variant="secondary">Supabase</Badge>
+                <Badge variant="secondary">SQL</Badge>
                 {/* Add more database skills as Badges */}
               </div>
             </div>
@@ -132,102 +152,11 @@ export default function Home() {
           </div>
         </section>
 
-        <section id="currentlylearning" className="py-8">
-          <h2 className="text-2xl font-bold text-gray-800 mb-6">Currently Learning</h2>
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-            <div className="flex flex-col gap-2">
-              <h3 className="font-semibold text-gray-700">Front-End</h3>
-              <div className="flex flex-wrap gap-1">
-                <Badge variant="secondary">Typescript</Badge>
-               
-                {/* Add more front-end skills as Badges */}
-              </div>
-            </div>
-            <div className="flex flex-col gap-2">
-              <h3 className="font-semibold text-gray-700">Back-End</h3>
-              <div className="flex flex-wrap gap-1">
-                
-                
-                {/* Add more back-end skills as Badges */}
-              </div>
-            </div>
-            <div className="flex flex-col gap-2">
-              <h3 className="font-semibold text-gray-700">Databases</h3>
-              <div className="flex flex-wrap gap-1">
-                <Badge variant="secondary">Supabase</Badge>
-                <Badge variant="secondary">SQL</Badge>
-                {/* Add more database skills as Badges */}
-              </div>
-            </div>
-            <div className="flex flex-col gap-2">
-              <h3 className="font-semibold text-gray-700">Tools & Technologies</h3>
-              <div className="flex flex-wrap gap-1">
-                <Badge variant="secondary">AWS</Badge>
-                
-                {/* Add more tools and technologies as Badges */}
-              </div>
-            </div>
-          </div>
-        </section>
-
         {/* Projects Section */}
         <section id="projects" className="py-8">
           <h2 className="text-2xl font-bold text-gray-800 mb-6">Projects</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {/* Example Project Card - Repeat for each project */}
-            <Card>
-              <CardHeader>
-                <CardTitle>Scrypt</CardTitle>
-                <CardDescription>An AI integrated note taking app.</CardDescription>
-              </CardHeader>
-              <CardContent>
-                <img src="scryptnotesthumbnail.png" alt="Scrypt Notes Image" className="w-full h-48 object-cover rounded-md mb-4" />
-                <div className="text-sm text-gray-600 mb-4">
-                  Technologies used: 
-                  <div className="flex flex-wrap gap-1">
-                    <Badge variant="outline">Next.js</Badge>
-                    <Badge variant="outline">Typescript</Badge>
-                    <Badge variant="outline">Gemini Integration</Badge>
-                    <Badge variant="outline">Shadcn/ui</Badge>
-                    <Badge variant="outline">MongoDB</Badge>
-                  </div>
-                </div>
-                <div className="flex space-x-2">
-                  <Button asChild variant="outline">
-                    <Link href="https://scryptnotes.vercel.app/" target="_blank" rel="noopener noreferrer">Live Demo</Link>
-                  </Button>
-                  <Button asChild variant="outline">
-                    <Link href="https://github.com/DaleMcBride211/scryptnotes" target="_blank" rel="noopener noreferrer">GitHub</Link>
-                  </Button>
-                </div>
-              </CardContent>
-            </Card>
-            {/* Add more project Cards here */}
-            <Card>
-              <CardHeader>
-                <CardTitle>Tempyst (IN PROGRESS)</CardTitle>
-                <CardDescription>Another interesting project.</CardDescription>
-              </CardHeader>
-              <CardContent>
-                <img src="/project2.jpg" alt="Project 2" className="w-full h-48 object-cover rounded-md mb-4" />
-                <div className="text-sm text-gray-600 mb-4">
-                  Technologies used: 
-                  <div className="flex flex-wrap gap-1">
-                    <Badge variant="outline">Shadcn/ui</Badge>
-                    <Badge variant="outline">Next.js</Badge>
-                    <Badge variant="outline">Typescript</Badge>
-                  </div>
-                </div>
-                <div className="flex space-x-2">
-                  <Button asChild variant="outline">
-                    <Link href="#" target="_blank" rel="noopener noreferrer">Live Demo</Link>
-                  </Button>
-                  <Button asChild variant="outline">
-                    <Link href="#" target="_blank" rel="noopener noreferrer">GitHub</Link>
-                  </Button>
-                </div>
-              </CardContent>
-            </Card>
             {/* ... more projects ... */}
             <Card>
               <CardHeader>
@@ -286,6 +215,62 @@ export default function Home() {
             </Card>
             <Card>
               <CardHeader>
+                <CardTitle>Scrypt</CardTitle>
+                <CardDescription>An AI integrated note taking app.</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <img src="scryptnotesthumbnail.png" alt="Scrypt Notes Image" className="w-full h-48 object-cover rounded-md mb-4" />
+                <div className="text-sm text-gray-600 mb-4">
+                  Technologies used: 
+                  <div className="flex flex-wrap gap-1">
+                    <Badge variant="outline">Next.js</Badge>
+                    <Badge variant="outline">Typescript</Badge>
+                    <Badge variant="outline">Gemini Integration</Badge>
+                    <Badge variant="outline">Shadcn/ui</Badge>
+                    <Badge variant="outline">MongoDB</Badge>
+                  </div>
+                </div>
+                <div className="flex space-x-2">
+                  <Button asChild variant="outline">
+                    <Link href="https://scryptnotes.vercel.app/" target="_blank" rel="noopener noreferrer">Live Demo</Link>
+                  </Button>
+                  <Button asChild variant="outline">
+                    <Link href="https://github.com/DaleMcBride211/scryptnotes" target="_blank" rel="noopener noreferrer">GitHub</Link>
+                  </Button>
+                </div>
+              </CardContent>
+            </Card>
+            {/* Add more project Cards here */}
+            <Card>
+              <CardHeader>
+                <CardTitle>Tempyst</CardTitle>
+                <CardDescription>Weather App with Next Auth </CardDescription>
+              </CardHeader>
+              <CardContent>
+                <img src="tempystpreview.png" alt="tempyst preview" className="w-full h-48 object-cover rounded-md mb-4" />
+                <div className="text-sm text-gray-600 mb-4">
+                  Technologies used: 
+                  <div className="flex flex-wrap gap-1">
+                    <Badge variant="outline">Shadcn/ui</Badge>
+                    <Badge variant="outline">Next.js</Badge>
+                    <Badge variant="outline">Typescript</Badge>
+                    <Badge variant="outline">Next Auth</Badge>
+                    <Badge variant="outline">API</Badge>
+                    
+                  </div>
+                </div>
+                <div className="flex space-x-2">
+                  <Button asChild variant="outline">
+                    <Link href="https://tempyst.vercel.app/" target="_blank" rel="noopener noreferrer">Live Demo</Link>
+                  </Button>
+                  <Button asChild variant="outline">
+                    <Link href="https://github.com/DaleMcBride211/tempyst" target="_blank" rel="noopener noreferrer">GitHub</Link>
+                  </Button>
+                </div>
+              </CardContent>
+            </Card>
+            <Card>
+              <CardHeader>
                 <CardTitle>Budjyt</CardTitle>
                 <CardDescription>Another interesting project.</CardDescription>
               </CardHeader>
@@ -337,29 +322,6 @@ export default function Home() {
               </CardContent>
             </Card>
           </div>
-        </section>
-
-        {/* Contact Section */}
-        <section id="contact" className="py-8">
-          <h2 className="text-2xl font-bold text-gray-800 mb-6">Contact Me</h2>
-          <p className="text-lg text-gray-600 mb-4">
-            I'm always open to new opportunities and collaborations. Feel free to reach out!
-          </p>
-          <form className="max-w-md mx-auto flex flex-col gap-4">
-            <div className="grid w-full max-w-sm items-center gap-1.5">
-              <Label htmlFor="name">Name</Label>
-              <Input type="text" id="name" placeholder="Your Name" />
-            </div>
-            <div className="grid w-full max-w-sm items-center gap-1.5">
-              <Label htmlFor="email">Email</Label>
-              <Input type="email" id="email" placeholder="Your Email" />
-            </div>
-            <div className="grid w-full max-w-sm items-center gap-1.5">
-              <Label htmlFor="message">Message</Label>
-              <Textarea id="message" placeholder="Your Message" rows={5} />
-            </div>
-            <Button type="submit">Send Message</Button>
-          </form>
         </section>
       </main>
 
