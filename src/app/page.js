@@ -25,9 +25,6 @@ export default function Home() {
             <Link href="#projects" className="hover:text-indigo-400">
               Projects
             </Link>
-            <Link href="#contact" className="hover:text-indigo-400">
-              Contact
-            </Link>
           </nav>
         </div>
       </header>
@@ -38,7 +35,7 @@ export default function Home() {
           <div className="md:w-1/2">
             <h2 className="text-3xl font-bold text-gray-800 mb-4">Hi, I am Dale McBride</h2>
             <p className="text-lg text-gray-600 mb-6">
-              A passionate full-stack web developer with a strong foundation in both front-end and back-end technologies. I love building scalable and user-friendly web applications.
+              A full-stack web developer with a strong foundation in both front-end and back-end technologies. 
             </p>
             <div className="grid gap-2 text-sm">
               <div className="flex items-center gap-2">
@@ -63,8 +60,8 @@ export default function Home() {
             </Button>
           </div>
           <div className="md:w-1/2 flex justify-center">
-            <Avatar className="w-32 h-32 rounded-full shadow-md">
-              {/* You can use an actual image here */}
+            <Avatar className="w-72 h-72 rounded-full shadow-md">
+              
               <AvatarImage src="headshot.JPG" />
               <AvatarFallback>DM</AvatarFallback>
             </Avatar>
@@ -76,10 +73,10 @@ export default function Home() {
           <h2 className="text-3xl font-bold text-gray-900 dark:text-gray-100 mb-8">About Me</h2>
           <div className="space-y-6">
             <p className="text-lg text-gray-700 dark:text-gray-300">
-              As a full-stack developer, my passion lies in crafting web solutions that are not only impactful but also highly efficient. My journey through the world of web development has provided me with a versatile skill set and a comprehensive understanding of the entire development process.
+              Ever since I was young, I've been fascinated by technology, especially getting hands-on with building gaming computers. It was clear to me then that a career in tech was my path. I chose programming because it offers the incredible ability to create anything you can imagine. 
             </p>
             <p className="text-lg text-gray-700 dark:text-gray-300">
-              I am a firm believer in continuous learning and actively seek out new technologies to ensure I remain at the cutting edge of web development trends. I find great satisfaction in collaborative settings and am energized by the challenge of tackling intricate problems.
+              I'm a full-stack developer about to graduate with my Computer Science degree. My main goal is to constantly learn how to write more efficient and effective code. I'm currently seeking an internship to apply my skills and grow further. 
             </p>
           </div>
           <div className="mt-10">
@@ -87,7 +84,7 @@ export default function Home() {
             <Card className="max-w-sm">
               <CardHeader>
                 <CardTitle>Brigham Young University</CardTitle>
-                <CardDescription>2023 - 2027</CardDescription>
+                <CardDescription>2023 - 2026</CardDescription>
               </CardHeader>
               <CardContent className="space-y-1">
                 <p className="text-gray-600 dark:text-gray-400">
@@ -156,37 +153,33 @@ export default function Home() {
         <section id="projects" className="py-8">
           <h2 className="text-2xl font-bold text-gray-800 mb-6">Projects</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {/* Example Project Card - Repeat for each project */}
-            {/* ... more projects ... */}
             <Card>
               <CardHeader>
                 <CardTitle>Lynk</CardTitle>
-                <CardDescription>Another interesting project.</CardDescription>
+                <CardDescription>Task manager app</CardDescription>
               </CardHeader>
               <CardContent>
-                <img src="/project2.jpg" alt="Project 2" className="w-full h-48 object-cover rounded-md mb-4" />
+                <img src="/lynkpreview.png" alt="lynk preview" className="w-full h-48 object-cover rounded-md mb-4" />
                 <div className="text-sm text-gray-600 mb-4">
                   Technologies used: 
                   <div className="flex flex-wrap gap-1">
-                    <Badge variant="outline">Shadcn/ui</Badge>
-                    <Badge variant="outline">Supabase</Badge>
                     <Badge variant="outline">Next.js</Badge>
-                    
-                    
-                    
+                    <Badge variant="outline">Supabase</Badge>
+                    <Badge variant="outline">Shadcn/ui</Badge>
+                    <Badge variant="outline">Auth</Badge>
                   </div>
                 </div>
                 <div className="flex space-x-2">
                   <Button asChild variant="outline">
-                    <Link href="#" target="_blank" rel="noopener noreferrer">Live Demo</Link>
+                    <Link href="https://lynk-rho.vercel.app/" target="_blank" rel="noopener noreferrer">Live Demo</Link>
                   </Button>
                   <Button asChild variant="outline">
-                    <Link href="#" target="_blank" rel="noopener noreferrer">GitHub</Link>
+                    <Link href="https://github.com/DaleMcBride211/lynk" target="_blank" rel="noopener noreferrer">GitHub</Link>
                   </Button>
                 </div>
               </CardContent>
             </Card>
-            <Card>
+            {/* <Card>
               <CardHeader>
                 <CardTitle>Profyt</CardTitle>
                 <CardDescription>Another interesting project.</CardDescription>
@@ -212,7 +205,7 @@ export default function Home() {
                   </Button>
                 </div>
               </CardContent>
-            </Card>
+            </Card> */}
             <Card>
               <CardHeader>
                 <CardTitle>Scrypt</CardTitle>
@@ -269,7 +262,7 @@ export default function Home() {
                 </div>
               </CardContent>
             </Card>
-            <Card>
+            {/* <Card>
               <CardHeader>
                 <CardTitle>Budjyt</CardTitle>
                 <CardDescription>Another interesting project.</CardDescription>
@@ -294,8 +287,8 @@ export default function Home() {
                   </Button>
                 </div>
               </CardContent>
-            </Card>
-            <Card>
+            </Card> */}
+            {/* <Card>
               <CardHeader>
                 <CardTitle>GIS Project</CardTitle>
                 <CardDescription>Another interesting project.</CardDescription>
@@ -320,7 +313,7 @@ export default function Home() {
                   </Button>
                 </div>
               </CardContent>
-            </Card>
+            </Card> */}
           </div>
         </section>
       </main>
