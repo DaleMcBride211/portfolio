@@ -6,6 +6,7 @@ import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
 import { Badge } from "@/components/ui/badge";
 import Link from "next/link";
+import Image from "next/image"; // Import the Image component
 
 export default function Home() {
   return (
@@ -33,7 +34,7 @@ export default function Home() {
         {/* Hero Section */}
         <section className="flex flex-col md:flex-row items-center gap-8 md:gap-16">
           <div className="md:w-1/2">
-            <h2 className="text-3xl font-bold text-gray-800 mb-4">Hi, I am Dale McBride</h2>
+            <h2 className="text-3xl font-bold text-gray-800 mb-4">Hi, I&apos;m Dale McBride</h2>
             <p className="text-lg text-gray-600 mb-6">
               A full-stack web developer with a strong foundation in both front-end and back-end technologies. 
             </p>
@@ -73,10 +74,10 @@ export default function Home() {
           <h2 className="text-3xl font-bold text-gray-900 dark:text-gray-100 mb-8">About Me</h2>
           <div className="space-y-6">
             <p className="text-lg text-gray-700 dark:text-gray-300">
-              Ever since I was young, I've been fascinated by technology, especially getting hands-on with building gaming computers. It was clear to me then that a career in tech was my path. I chose programming because it offers the incredible ability to create anything you can imagine. 
+              Ever since I was young, I&apos;ve been fascinated by technology, especially getting hands-on with building gaming computers. It was clear to me then that a career in tech was my path. I chose programming because it offers the incredible ability to create anything you can imagine. 
             </p>
             <p className="text-lg text-gray-700 dark:text-gray-300">
-              I'm a full-stack developer about to graduate with my Computer Science degree. My main goal is to constantly learn how to write more efficient and effective code. I'm currently seeking an internship to apply my skills and grow further. 
+              I&apos;m a full-stack developer about to graduate with my Computer Science degree. My main goal is to constantly learn how to write more efficient and effective code. I&apos;m currently seeking an internship to apply my skills and grow further. 
             </p>
           </div>
           <div className="mt-10">
@@ -159,7 +160,7 @@ export default function Home() {
                 <CardDescription>Task manager app</CardDescription>
               </CardHeader>
               <CardContent>
-                <img src="/lynkpreview.png" alt="lynk preview" className="w-full h-48 object-cover rounded-md mb-4" />
+                <Image src="/lynkpreview.png" alt="lynk preview" width={500} height={300} className="w-full h-48 object-cover rounded-md mb-4" />
                 <div className="text-sm text-gray-600 mb-4">
                   Technologies used: 
                   <div className="flex flex-wrap gap-1">
@@ -179,40 +180,13 @@ export default function Home() {
                 </div>
               </CardContent>
             </Card>
-            {/* <Card>
-              <CardHeader>
-                <CardTitle>Profyt</CardTitle>
-                <CardDescription>Another interesting project.</CardDescription>
-              </CardHeader>
-              <CardContent>
-                <img src="/project2.jpg" alt="Project 2" className="w-full h-48 object-cover rounded-md mb-4" />
-                <div className="text-sm text-gray-600 mb-4">
-                  Technologies used: 
-                  <div className="flex flex-wrap gap-1">
-                    <Badge variant="outline">Shadcn/ui</Badge>
-                    <Badge variant="outline">Supabase</Badge>
-                    <Badge variant="outline">Next.js</Badge>
-                   
-                    
-                  </div>
-                </div>
-                <div className="flex space-x-2">
-                  <Button asChild variant="outline">
-                    <Link href="#" target="_blank" rel="noopener noreferrer">Live Demo</Link>
-                  </Button>
-                  <Button asChild variant="outline">
-                    <Link href="#" target="_blank" rel="noopener noreferrer">GitHub</Link>
-                  </Button>
-                </div>
-              </CardContent>
-            </Card> */}
             <Card>
               <CardHeader>
                 <CardTitle>Scrypt</CardTitle>
                 <CardDescription>An AI integrated note taking app.</CardDescription>
               </CardHeader>
               <CardContent>
-                <img src="scryptnotesthumbnail.png" alt="Scrypt Notes Image" className="w-full h-48 object-cover rounded-md mb-4" />
+                <Image src="/scryptnotesthumbnail.png" alt="Scrypt Notes Image" width={500} height={300} className="w-full h-48 object-cover rounded-md mb-4" />
                 <div className="text-sm text-gray-600 mb-4">
                   Technologies used: 
                   <div className="flex flex-wrap gap-1">
@@ -233,14 +207,13 @@ export default function Home() {
                 </div>
               </CardContent>
             </Card>
-            {/* Add more project Cards here */}
             <Card>
               <CardHeader>
                 <CardTitle>Tempyst</CardTitle>
                 <CardDescription>Weather App with Next Auth </CardDescription>
               </CardHeader>
               <CardContent>
-                <img src="tempystpreview.png" alt="tempyst preview" className="w-full h-48 object-cover rounded-md mb-4" />
+                <Image src="/tempystpreview.png" alt="tempyst preview" width={500} height={300} className="w-full h-48 object-cover rounded-md mb-4" />
                 <div className="text-sm text-gray-600 mb-4">
                   Technologies used: 
                   <div className="flex flex-wrap gap-1">
@@ -249,7 +222,6 @@ export default function Home() {
                     <Badge variant="outline">Typescript</Badge>
                     <Badge variant="outline">Next Auth</Badge>
                     <Badge variant="outline">API</Badge>
-                    
                   </div>
                 </div>
                 <div className="flex space-x-2">
@@ -262,58 +234,6 @@ export default function Home() {
                 </div>
               </CardContent>
             </Card>
-            {/* <Card>
-              <CardHeader>
-                <CardTitle>Budjyt</CardTitle>
-                <CardDescription>Another interesting project.</CardDescription>
-              </CardHeader>
-              <CardContent>
-                <img src="/project2.jpg" alt="Project 2" className="w-full h-48 object-cover rounded-md mb-4" />
-                <div className="text-sm text-gray-600 mb-4">
-                  Technologies used: 
-                  <div className="flex flex-wrap gap-1">
-                    <Badge variant="outline">Shadcn/ui</Badge>
-                    <Badge variant="outline">Supabase</Badge>
-                    <Badge variant="outline">Next.js</Badge>
-                    
-                  </div>
-                </div>
-                <div className="flex space-x-2">
-                  <Button asChild variant="outline">
-                    <Link href="#" target="_blank" rel="noopener noreferrer">Live Demo</Link>
-                  </Button>
-                  <Button asChild variant="outline">
-                    <Link href="#" target="_blank" rel="noopener noreferrer">GitHub</Link>
-                  </Button>
-                </div>
-              </CardContent>
-            </Card> */}
-            {/* <Card>
-              <CardHeader>
-                <CardTitle>GIS Project</CardTitle>
-                <CardDescription>Another interesting project.</CardDescription>
-              </CardHeader>
-              <CardContent>
-                <img src="/project2.jpg" alt="Project 2" className="w-full h-48 object-cover rounded-md mb-4" />
-                <div className="text-sm text-gray-600 mb-4">
-                  Technologies used: 
-                  <div className="flex flex-wrap gap-1">
-                    <Badge variant="outline">Shadcn/ui</Badge>
-                    <Badge variant="outline">Supabase</Badge>
-                    <Badge variant="outline">Next.js</Badge>
-                    
-                  </div>
-                </div>
-                <div className="flex space-x-2">
-                  <Button asChild variant="outline">
-                    <Link href="#" target="_blank" rel="noopener noreferrer">Live Demo</Link>
-                  </Button>
-                  <Button asChild variant="outline">
-                    <Link href="#" target="_blank" rel="noopener noreferrer">GitHub</Link>
-                  </Button>
-                </div>
-              </CardContent>
-            </Card> */}
           </div>
         </section>
       </main>
@@ -321,7 +241,6 @@ export default function Home() {
       <footer className="bg-slate-800 text-white py-4">
         <div className="container mx-auto px-4 text-center">
           <p>&copy; {new Date().getFullYear()} Dale McBride. All rights reserved.</p>
-          {/* You can add social media links here */}
         </div>
       </footer>
     </>
