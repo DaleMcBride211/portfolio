@@ -103,8 +103,6 @@ export default function Home() {
             </Card>
           </div>
         </section>
-
-        {/* Skills Section */}
         <section id="skills" className="py-8">
           <h2 className="text-2xl font-bold text-gray-800 mb-6">Skills</h2>
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
