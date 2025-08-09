@@ -1,12 +1,17 @@
 import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
-import { Textarea } from "@/components/ui/textarea";
 import { Badge } from "@/components/ui/badge";
 import Link from "next/link";
 import Image from "next/image"; // Import the Image component
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel";
 
 export default function Home() {
   return (
@@ -113,6 +118,7 @@ export default function Home() {
                 <Badge variant="secondary">CSS</Badge>
                 <Badge variant="secondary">JavaScript</Badge>
                 <Badge variant="secondary">React</Badge>
+                <Badge variant="secondary">React Native</Badge>
                 <Badge variant="secondary">Next.js</Badge>
                 <Badge variant="secondary">Shadcn/ui</Badge> 
                 <Badge variant="secondary">Typescript</Badge>
@@ -152,6 +158,46 @@ export default function Home() {
         <section id="projects" className="py-8">
           <h2 className="text-2xl font-bold text-gray-800 mb-6">Projects</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+           <Card>
+            <CardHeader>
+              <CardTitle>Budjyt</CardTitle>
+              <CardDescription>Expense Tracker App (React Native)</CardDescription>
+            </CardHeader>
+            <CardContent>
+              <Carousel className="w-full max-w-xs mx-auto mb-4">
+                <CarouselContent>
+                  <CarouselItem>
+                    <Image src="/budjytlogin.png" alt="budjyt preview" width={500} height={300} className="w-full h-48 object-contain rounded-md" />
+                  </CarouselItem>
+                  <CarouselItem>
+                    <Image src="/budjythomepage.png" alt="budjyt preview" width={500} height={300} className="w-full h-48 object-contain rounded-md" />
+                  </CarouselItem>
+                  <CarouselItem>
+                    <Image src="/budjytexpensepage.png" alt="budjyt preview" width={500} height={300} className="w-full h-48 object-contain rounded-md" />
+                  </CarouselItem>
+                </CarouselContent>
+                <CarouselPrevious />
+                <CarouselNext />
+              </Carousel>
+              <div className="text-sm text-gray-600 mb-4">
+                Technologies used:
+                <div className="flex flex-wrap gap-1">
+                  <Badge variant="outline">React Native</Badge>
+                  <Badge variant="outline">Supabase</Badge>
+                  <Badge variant="outline">Git</Badge>
+                  <Badge variant="outline">Auth</Badge>
+                </div>
+              </div>
+              <div className="flex space-x-2">
+                {/* <Button asChild variant="outline">
+                  <Link href="#" target="_blank" rel="noopener noreferrer">Live Demo</Link>
+                </Button> */}
+                <Button asChild variant="outline">
+                  <Link href="https://github.com/DaleMcBride211/budjyt" target="_blank" rel="noopener noreferrer">GitHub</Link>
+                </Button>
+              </div>
+            </CardContent>
+          </Card>
             <Card>
               <CardHeader>
                 <CardTitle>Lynk</CardTitle>
