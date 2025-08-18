@@ -189,9 +189,7 @@ export default function Home() {
                 </div>
               </div>
               <div className="flex space-x-2">
-                {/* <Button asChild variant="outline">
-                  <Link href="#" target="_blank" rel="noopener noreferrer">Live Demo</Link>
-                </Button> */}
+                
                 <Button asChild variant="outline">
                   <Link href="https://github.com/DaleMcBride211/budjyt" target="_blank" rel="noopener noreferrer">GitHub</Link>
                 </Button>
