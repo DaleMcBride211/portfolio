@@ -131,7 +131,7 @@ export default function Home() {
                 <Badge variant="secondary">Node.js</Badge>
                 <Badge variant="secondary">Express.js</Badge>
                 <Badge variant="secondary">Python</Badge>
-                {/* Add more back-end skills as Badges */}
+                
               </div>
             </div>
             <div className="flex flex-col gap-2">
