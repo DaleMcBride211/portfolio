@@ -41,7 +41,7 @@ export default function Home() {
           <div className="md:w-1/2">
             <h2 className="text-3xl font-bold text-gray-800 mb-4">Hi, I&apos;m Dale McBride</h2>
             <p className="text-lg text-gray-600 mb-6">
-              I'm a full-stack developer passionate about building dynamic web applications with Next.js and TypeScript. I'm looking for an internship where I can challenge myself, contribute to real-world projects, and further develop my technical skills.
+              I&apos;m a full-stack developer passionate about building dynamic web applications with Next.js and TypeScript. I&apos;m looking for an internship where I can challenge myself, contribute to real-world projects, and further develop my technical skills.
             </p>
             <div className="grid gap-2 text-sm">
               <div className="flex items-center gap-2">
