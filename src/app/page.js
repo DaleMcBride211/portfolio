@@ -170,10 +170,10 @@ export default function Home() {
                     <Image src="/budjytlogin.png" alt="budjyt preview" width={500} height={300} className="w-full h-48 object-contain rounded-md" />
                   </CarouselItem>
                   <CarouselItem>
-                    <Image src="/budjythomepage.png" alt="budjyt preview" width={500} height={300} className="w-full h-48 object-contain rounded-md" />
+                    <Image src="/budjythomepage.png" alt="budjyt homepage" width={500} height={300} className="w-full h-48 object-contain rounded-md" />
                   </CarouselItem>
                   <CarouselItem>
-                    <Image src="/budjytexpensepage.png" alt="budjyt preview" width={500} height={300} className="w-full h-48 object-contain rounded-md" />
+                    <Image src="/budjytexpensepage.png" alt="budjyt expensepage" width={500} height={300} className="w-full h-48 object-contain rounded-md" />
                   </CarouselItem>
                 </CarouselContent>
                 <CarouselPrevious />
