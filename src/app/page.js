@@ -158,7 +158,7 @@ export default function Home() {
         <section id="projects" className="py-8">
           <h2 className="text-2xl font-bold text-gray-800 mb-6">Projects</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-           <Card>
+           {/* <Card>
             <CardHeader>
               <CardTitle>Budjyt</CardTitle>
               <CardDescription>Expense Tracker App (React Native)</CardDescription>
@@ -195,7 +195,7 @@ export default function Home() {
                 </Button>
               </div>
             </CardContent>
-          </Card>
+          </Card> */}
             <Card>
               <CardHeader>
                 <CardTitle>Lynk</CardTitle>
