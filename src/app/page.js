@@ -222,7 +222,7 @@ export default function Home() {
                 </div>
               </CardContent>
             </Card>
-            <Card>
+            {/* <Card>
               <CardHeader>
                 <CardTitle>Scrypt</CardTitle>
                 <CardDescription>An AI integrated note taking app.</CardDescription>
@@ -248,7 +248,7 @@ export default function Home() {
                   </Button>
                 </div>
               </CardContent>
-            </Card>
+            </Card> */}
             <Card>
               <CardHeader>
                 <CardTitle>Tempyst</CardTitle>
